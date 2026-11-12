@@ -1,0 +1,47 @@
+{
+  "name": "bsec3",
+  "description": "Bosch Sensortec Environmental Cluster (BSEC) v3 Software library for use with the BME688 and BME690 sensors. It provides higher-level signal processing and fusion. The library receives compensated sensor values from the BME6xx sensor API and processes the signals to provide the requested virtual sensor outputs.",
+  "homepage": "https://www.bosch-sensortec.com/software-tools/software/bme688-software/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boschsensortec/Bosch-BSEC3-Library"
+  },
+  "version": "3.3.0.0",
+  "authors": {
+    "name": "Bosch Sensortec",
+    "email": "contact@bosch-sensortec.com"
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "includeDir": "src/inc",
+    "extraScript": "extra_script.py"
+  },
+  "dependencies": [
+    {
+      "name": "BME68x Sensor library",
+      "owner": "boschsensortec"
+    },
+    {
+      "name": "BME69x Sensor library",
+      "owner": "boschsensortec"
+    }
+  ],
+  "examples": [
+    {
+      "name": "BME690 IAQ (selectivity config)",
+      "base": "examples/bme690_iaq",
+      "files": ["bme690_iaq.ino", "bsec_selectivity.c", "bsec_selectivity.h"]
+    },
+    {
+      "name": "BME688 IAQ (selectivity config)",
+      "base": "examples/bme688_iaq",
+      "files": ["bme688_iaq.ino", "bsec_selectivity.c", "bsec_selectivity.h", "build_opt.h"]
+    },
+    {
+      "name": "Basic usage with config & state saves",
+      "base": "examples/basic_config_state",
+      "files": ["basic_config_state.ino"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map For Bosch-BSEC3-Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Bsec3	KEYWORD1
+bsecData	KEYWORD1
+bsecSensor	KEYWORD1
+bsecOutputs	KEYWORD1
+bsecCallback	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+updateSubscription	KEYWORD2
+run	KEYWORD2
+attachCallback	KEYWORD2
+getOutputs	KEYWORD2
+getData	KEYWORD2
+getState	KEYWORD2
+setState	KEYWORD2
+getConfig	KEYWORD2
+setConfig	KEYWORD2
+setTemperatureOffset	KEYWORD2
+getTimeMs	KEYWORD2
+allocateMemory	KEYWORD2
+clearMemory	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BSEC3_BME690	LITERAL1
+TEMP_OFFSET_LP	LITERAL1
+TEMP_OFFSET_ULP	LITERAL1
+BSEC_INSTANCE_SIZE	LITERAL1
