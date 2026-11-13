@@ -72,7 +72,7 @@ void setup(void)
 #else
     Wire.begin();
 #endif
-    pinMode(PANIC_LED, OUTPUT);
+    // pinMode(PANIC_LED, OUTPUT);
     while (!Serial) delay(10);
 
     if (!envSensor.begin(BME6XX_ADDR, Wire))
@@ -173,9 +173,9 @@ void errLeds(void)
 {
     while (1)
     {
-        digitalWrite(PANIC_LED, HIGH);
+        // digitalWrite(PANIC_LED, HIGH);
         delay(ERROR_DUR);
-        digitalWrite(PANIC_LED, LOW);
+        // digitalWrite(PANIC_LED, LOW);
         delay(ERROR_DUR);
     }
 }

@@ -41,7 +41,7 @@
     {
       "name": "Basic usage with config & state saves",
       "base": "examples/basic_config_state",
-      "files": ["basic_config_state.ino"]
+      "files": ["basic_config_state.ino", "bsec_selectivity.c", "bsec_selectivity.h"]
     }
   ]
 }
